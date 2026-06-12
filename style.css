@@ -146,7 +146,7 @@ footer a {
 
 .filter-wrapper{
     position:sticky;
-    top:100px;
+    top:85px;
     z-index:999;
     display:flex;
     align-items:center;
