@@ -20,11 +20,35 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #009688;
+     background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #26a69a 25%,
+        #4db6ac 50%,
+        #26a69a 75%,
+        #009688 100%
+    );
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 15px 100px 15px 100px;
+}
+
+.section-header h2 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.section-header h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #009688, #00bfa5);
+    border-radius: 10px;
 }
 
 section {
@@ -69,7 +93,14 @@ footer a {
     text-decoration: none;
     color: #fff;
     padding: 5px 18px;
-    background: #009688;
+     background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #26a69a 25%,
+        #4db6ac 50%,
+        #26a69a 75%,
+        #009688 100%
+    );
     border-radius: 18px;
 }
 
@@ -79,7 +110,7 @@ footer a {
     z-index:999;
     display:flex;
     align-items:center;
-    background:#00968880;
+    background:#fff;
 }
 
 .filter-btn{
@@ -124,7 +155,7 @@ h2 {
     width: 98%;
 }
 .contact{
-    background:#00968824;
+    background:#fff;
     padding:60px 20px;
 }
 
@@ -262,7 +293,14 @@ h2 {
 }
 
 footer {
-    background: #009688;
+     background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #26a69a 25%,
+        #4db6ac 50%,
+        #26a69a 75%,
+        #009688 100%
+    );
     padding: 25px;
     text-align: center;
 }
@@ -382,9 +420,16 @@ footer {
     nav {
         display: none;
         position: absolute;
-        top: 65px;
+        top: 70px;
         right: 20px;
-        background: #009688;
+         background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #26a69a 25%,
+        #4db6ac 50%,
+        #26a69a 75%,
+        #009688 100%
+    );
         padding: 10px;
         border-radius: 10px;
         width: 50%;
@@ -415,7 +460,14 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: #009688;
+     background: linear-gradient(
+        90deg,
+        #009688 0%,
+        #26a69a 25%,
+        #4db6ac 50%,
+        #26a69a 75%,
+        #009688 100%
+    );
     position: sticky;
     top: 0;
     z-index: 1000;
