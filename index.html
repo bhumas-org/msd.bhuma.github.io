@@ -8,127 +8,183 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="brand">
-        <h1>MSD</h1>
-        <p>My Sports Dress</p>
+      <h1>MSD</h1>
+      <p>My Sports Dress</p>
     </div>
 
     <div class="menu-toggle" id="menuBtn" onclick="toggleMenu()">
-        ☰
+      ☰
     </div>
 
     <nav id="menu">
-        <a href="#tshirts" onclick="closeMenu()">TShirts</a>
-        <a href="#tracks" onclick="closeMenu()">Tracks</a>
-        <a href="#jersey" onclick="closeMenu()">Full Jersey</a>
-        <a href="#shorts" onclick="closeMenu()">Shorts</a>
-        <a href="#contact" onclick="closeMenu()">Contact</a>
+      <a href="#tshirts" onclick="closeMenu()">TShirts</a>
+      <a href="#tracks" onclick="closeMenu()">Tracks</a>
+      <a href="#jersey" onclick="closeMenu()">Full Jersey</a>
+      <a href="#shorts" onclick="closeMenu()">Shorts</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
     </nav>
-</header>
+  </header>
 
   <div class="filter-wrapper">
     <!-- <button class="filter-btn" onclick="scrollFilters(-200)">❮</button> -->
 
     <div class="filters" id="filters">
-        <a href="#tshirts">TShirts</a>
-        <a href="#tracks">Tracks</a>
-        <a href="#jersey">Jersey</a>
-        <a href="#shorts">Shorts</a>
+      <a href="#tshirts">TShirts</a>
+      <a href="#tracks">Tracks</a>
+      <a href="#jersey">Jersey</a>
+      <a href="#shorts">Shorts</a>
     </div>
 
-   <!-- <button class="filter-btn" onclick="scrollFilters(200)">❯</button> --> 
-</div>
+    <!-- <button class="filter-btn" onclick="scrollFilters(200)">❯</button> -->
+  </div>
 
   <section id="tshirts">
     <h2>TShirts</h2>
     <div class="carousel">
-      <div class="card"><img src="assets/images/tshirt-1.jpeg"></div>
-      <div class="card"><img src="assets/images/tshirt-2.jpeg"></div>
-      <div class="card"><img src="assets/images/tshirt-1.jpeg"></div>
-      <div class="card"><img src="assets/images/tshirt-2.jpeg"></div>
-      <div class="card"><img src="assets/images/tshirt-1.jpeg"></div>
+      <div class="card">
+        <img src="assets/images/tshirt-1.jpeg" alt="TShirt 1" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/tshirt-2.jpeg" alt="TShirt 2" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/tshirt-1.jpeg" alt="TShirt 3" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/tshirt-2.jpeg" alt="TShirt 4" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/tshirt-1.jpeg" alt="TShirt 5" onclick="openModal(this.src)">
+      </div>
     </div>
   </section>
   <section id="tracks">
     <h2>Tracks</h2>
     <div class="carousel">
-      <div class="card"><img src="assets/images/track-1.jpeg"></div>
-      <div class="card"><img src="assets/images/track-2.jpeg"></div>
-      <div class="card"><img src="assets/images/track-1.jpeg"></div>
-      <div class="card"><img src="assets/images/track-2.jpeg"></div>
-      <div class="card"><img src="assets/images/track-1.jpeg"></div>
+      <div class="card">
+        <img src="assets/images/track-1.jpeg" alt="Track 1" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/track-2.jpeg" alt="Track 2" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/track-1.jpeg" alt="Track 3" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/track-2.jpeg" alt="Track 4" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/track-1.jpeg" alt="Track 5" onclick="openModal(this.src)">
+      </div>
     </div>
   </section>
   <section id="jersey">
     <h2>Full Jersey</h2>
     <div class="carousel">
-      <div class="card"><img src="assets/images/jersey-1.jpg"></div>
-      <div class="card"><img src="assets/images/jersey-2.jpg"></div>
-      <div class="card"><img src="assets/images/jersey-1.jpg"></div>
-      <div class="card"><img src="assets/images/jersey-2.jpg"></div>
-      <div class="card"><img src="assets/images/jersey-1.jpg"></div>
+      <div class="card">
+        <img src="assets/images/jersey-1.jpg" alt="Jersey 1" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/jersey-2.jpg" alt="Jersey 2" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/jersey-1.jpg" alt="Jersey 3" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/jersey-2.jpg" alt="Jersey 4" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/jersey-1.jpg" alt="Jersey 5" onclick="openModal(this.src)">
+      </div>
     </div>
   </section>
   <section id="shorts">
     <h2>Shorts</h2>
     <div class="carousel">
-      <div class="card"><img src="assets/images/short-1.jpeg"></div>
-      <div class="card"><img src="assets/images/short-2.jpeg"></div>
-      <div class="card"><img src="assets/images/short-1.jpeg"></div>
-      <div class="card"><img src="assets/images/short-2.jpeg"></div>
-      <div class="card"><img src="assets/images/short-1.jpeg"></div>
+      <div class="card">
+        <img src="assets/images/short-1.jpeg" alt="Short 1" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/short-2.jpeg" alt="Short 2" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/short-1.jpeg" alt="Short 3" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/short-2.jpeg" alt="Short 4" onclick="openModal(this.src)">
+      </div>
+
+      <div class="card">
+        <img src="assets/images/short-1.jpeg" alt="Short 5" onclick="openModal(this.src)">
+      </div>
     </div>
   </section>
 
   <section id="contact" class="contact">
     <div class="contact-container">
 
-        <!-- About Us -->
-        <div class="about-us">
-            <h2>About Us</h2>
+      <!-- About Us -->
+      <div class="about-us">
+        <h2>About Us</h2>
 
-            <p>
-                MSD - My Sports Dress is your trusted destination for
-                premium sportswear, team jerseys, tracksuits, shorts,
-                and customized sports uniforms.
-            </p>
+        <p>
+          MSD - My Sports Dress is your trusted destination for
+          premium sportswear, team jerseys, tracksuits, shorts,
+          and customized sports uniforms.
+        </p>
 
-            <p>
-                We provide high-quality sports apparel for schools,
-                academies, clubs, tournaments, and individual athletes.
-                Our mission is to deliver comfort, performance, and style
-                for every sport.
-            </p>
+        <p>
+          We provide high-quality sports apparel for schools,
+          academies, clubs, tournaments, and individual athletes.
+          Our mission is to deliver comfort, performance, and style
+          for every sport.
+        </p>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="contact-info">
+        <h2>Contact Us</h2>
+
+        <p>
+          <i class="fas fa-location-dot"></i>
+          #20, BVR Residency, 2nd Floor, DNA Anantha Layout, Nallurhalli, Whitefield, Bangalore-560066
+        </p>
+
+        <p>
+          <i class="fas fa-phone"></i>
+          +91 8050385987
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
         </div>
-
-        <!-- Contact Us -->
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-
-            <p>
-                <i class="fas fa-location-dot"></i>
-                #20, BVR Residency, 2nd Floor, DNA Anantha Layout, Nallurhalli, Whitefield, Bangalore-560066
-            </p>
-
-            <p>
-                <i class="fas fa-phone"></i>
-                +91 8050385987
-            </p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
+      </div>
 
     </div>
-</section>
+  </section>
 
   <footer>
     <div class="footer-links">
@@ -142,15 +198,15 @@
 
   <script src="script.js"></script>
 
-  <a
-    href="https://wa.me/918050385987"
-    class="whatsapp-float"
-    target="_blank"
-    aria-label="Chat on WhatsApp"
->
+  <a href="https://wa.me/918050385987?text=Hello%20MSD,%20I%20am%20interested%20in%20your%20sportswear.%20Please%20share%20more%20details."
+    class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
-</a>
+  </a>
 
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img id="modalImg" class="modal-content">
+</div>
 
 </body>
 
